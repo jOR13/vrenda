@@ -125,7 +125,7 @@ function checkSnakeCollision() {
 */
 function checkForFruit() {
     
-   ellipse(xFruit, yFruit,20,20);
+   ellipse(xFruit, yFruit,5,5);
 
     
   
