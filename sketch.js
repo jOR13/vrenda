@@ -14,9 +14,12 @@ var yFruit = 0;
 var scoreElem;
 
 
-var vrenda = ["v", "r", "e","n","d","a","_","q","u","i","e","r","e","s","*","c","a","s","a","r","t","e","*","c","o","n","m","i","n","g","o","?"];
+var vrenda = ["v", "r", "e","n","d","a","*","q","u","i","e","r","e","s","*","c","a","s","a","r","t","e","*","c","o","n","m","i","g","0","?"];
+
+//var vrenda = ["v", "r"];
 
 var aux=0;
+
   
 
 function setup() {
@@ -130,12 +133,33 @@ function checkForFruit() {
   //point(xFruit, yFruit);
   //point(xFruit, yFruit);
   if (xCor[xCor.length - 1] === xFruit && yCor[yCor.length - 1] === yFruit) {
+      
     var prevScore = parseInt(scoreElem.html().substring(8));
-    scoreElem.html('Score = ' .concat (vrenda[prevScore]));
+    scoreElem.html('Score = ' + (prevScore + 1));
+      var res=prevScore+1;
+        var x = vrenda.join();
+     
+      
+      if(res==vrenda.length){
+          var opcion = prompt(x, "");
+          if (opcion == "si" || opcion == "SI" ) {
+                
+                alert("TE AMO!!!")
+        } else {
+            alert("TE AMABA :C")
+            }
+         
+      }
+      
+          
+           
+ 
+      
+      
     xCor.unshift(xCor[0]);
     yCor.unshift(yCor[0]);
     numSegments++;
-      aux++
+    aux++
     updateFruitCoordinates();
     
   }
@@ -146,7 +170,9 @@ function updateFruitCoordinates() {
     
   xFruit = floor(random(10, (width - 100) / 10)) * 10;
   yFruit = floor(random(10, (height - 100) / 10)) * 10;
-  rand = vrenda[aux]; 
+  rand = vrenda[aux];
+
+    
     
 }
 
