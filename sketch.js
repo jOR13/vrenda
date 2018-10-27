@@ -128,10 +128,10 @@ function checkForFruit() {
     
     text(rand, xFruit, yFruit);
     
-    textSize(16);
+    textSize(12);
     
-  //point(xFruit, yFruit);
-  //point(xFruit, yFruit);
+   point(xFruit, yFruit);
+   point(xFruit, yFruit);
   if (xCor[xCor.length - 1] === xFruit && yCor[yCor.length - 1] === yFruit) {
       
     var prevScore = parseInt(scoreElem.html().substring(8));
