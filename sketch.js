@@ -125,7 +125,7 @@ function checkSnakeCollision() {
 */
 function checkForFruit() {
     
-   //point(xFruit, yFruit);
+   ellipse(xFruit, yFruit,20,20);
 
     
   
@@ -170,8 +170,8 @@ function checkForFruit() {
 function updateFruitCoordinates() {
   
     
-  xFruit = floor(random(50, (width - 100) / 10)) * 100;
-  yFruit = floor(random(50, (height - 100) / 10)) * 100;
+  xFruit = floor(random(10, (width - 100) / 10)) * 10;
+  yFruit = floor(random(10, (height - 100) / 10)) * 10;
   rand = vrenda[aux];
 
     
