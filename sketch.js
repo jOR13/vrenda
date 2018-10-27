@@ -100,7 +100,7 @@ function checkGameStatus() {
       checkSnakeCollision()) {
     noLoop();
     var scoreVal = parseInt(scoreElem.html().substring(8));
-    scoreElem.html('Game ended! Your score was : ' + scoreVal);
+    scoreElem.html('Juego terminado! tu score fue : ' + scoreVal);
   }
 }
 
