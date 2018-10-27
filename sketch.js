@@ -126,11 +126,13 @@ function checkSnakeCollision() {
 function checkForFruit() {
     
    //point(xFruit, yFruit);
-   ellipse(xFruit, yFruit,50, 50);
+
     
   
   
     text(rand, xFruit, yFruit);
+    
+     ellipse(xFruit, yFruit,50, 50);
     
     textSize(12);
     
