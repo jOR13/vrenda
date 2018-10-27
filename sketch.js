@@ -130,7 +130,7 @@ function checkForFruit() {
     
   
   
-    text(rand, xFruit, yFruit);
+    text(rand, xFruit+5, yFruit+5);
     
     textSize(40);
     
