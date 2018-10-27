@@ -132,9 +132,7 @@ function checkForFruit() {
   
     text(rand, xFruit, yFruit);
     
-     ellipse(xFruit, yFruit,50, 50);
-    
-    textSize(12);
+    textSize(40);
     
   if (xCor[xCor.length - 1] === xFruit && yCor[yCor.length - 1] === yFruit) {
       
